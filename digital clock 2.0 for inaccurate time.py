@@ -11,7 +11,7 @@ while True:
     h = t.tm_hour - 7
 
     clear()
-    print(h - 12 if h > 12 else h,":",f"{t.tm_min:02}",":",f"{t.tm_sec:02}","AM" if t.tm_hour < 12 else "PM")
+    print(h - 12 if h > 12 else h,":",f"{t.tm_min:02}",":",f"{t.tm_sec:02}","AM" if t.tm_hour > 12 else "PM")
     print(t.tm_mon,"/",t.tm_mday,"/",t.tm_year)
     time.sleep(1)
         
